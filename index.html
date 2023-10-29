@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Vishnu's Bakes
+		</title>
+		<meta property="og:title" content="Our Menu"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="bakery.png"/>
+		<meta property="og:url" content="file:///C:/All/React/simplehtmlnavigation/menu.html"/>
+		<meta property="og:description" content="Simple HTML website"/>
+		<meta property="og:locale" content="en_US"/>
+		<meta property="og:site_name" content="Vishnu's Bakes"/>
+
+		<link rel = "icon" href="/bakery.png">
+		<link rel = "stylesheet" href = "css/styles.css"/>
+		<link rel = "stylesheet" href = "css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/flexbox.css"/>
+	</head>
+	<body>
+		<header>
+			<div style="color: blue; text-align: center;">
+				<h1>Vishnu's Bakes</h1>
+				<button type="button" class="btn btn-primary">Bakery</button>
+			</div>
+		</header>
+		<nav>
+			<div class = "topnav">
+				<a href = "home.html">Home</a>
+				<a href = "menu.html">Menu</a>
+			</div>
+		</nav>
+		<main>
+			<div class="bandRow">
+				<div class="bandContainer">
+					<div class="tband redb" style="flex-basis: 33.33%;">Baked</div>
+					<div class="tband greenb" style="flex-basis: 33.33%;">With</div>
+					<div class="tband blueb" style="flex-basis: 33.33%;">&#10083;</div>
+				</div>
+			</div>
+			<!-- <div class="container">
+				<img src="search-icon.png" class="icon" alt="Search button">
+				<input type="search" class="searchBox" name="search" placeholder="Enter text">
+				<input type="submit" value="Search" class="searchButton">
+
+			</div> -->
+			<div class="tileContainer">
+				<div class="tile a">
+					<img src="puffs.jpg" alt="Image of egg puffs" width="360px" height="200px" style="object-fit: cover;">
+				</div>
+				<div class="tile b">
+					<video width="360x" height="200px" muted loop autoplay>
+						<source src="burger.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="tile c">
+					<img src="baked-food.jpg" alt="Image of baked foods" width="360px" height="200px" style="object-fit: cover;">
+				</div>
+			</div>
+
+			<!--
+				<iframe width="420" height="315" src="https://youtu.be/06TXrE9pUtQ?si=0vEnq1oaOn0lTEm6">
+			</iframe>
+			-->
+
+			<h2 style="text-align: center;">Sign up</h2>
+			<form method = "post" action = "menu.html">
+				<div style = "text-align: center;">
+					<label for = "username">Username</label>&nbsp;
+					<input type = "text" id = "username" name = "username" required>
+					<br>
+					
+					<label for = "phone_number">Enter your phone number</label>&nbsp;
+					<input id = "phone_number" name = "phone_number" required pattern = ".([0-9]{9,10})">
+					<br>
+
+					<label for = "location">Choose location:</label>&nbsp;
+					<input id = "location" name = "location" list = "location_list">
+					<datalist id = "location_list">
+						<option value = "Trivandrum"></option>
+						<option value = "Kochi"></option>
+						<option value = "Kozhikode"></option>
+					</datalist>
+					<br>
+
+					<input type = "submit" value = "Submit">
+				</div>
+			</form>
+			<br>
+			
+			<!--
+				<div style="margin-left: auto; margin-right: auto; text-align: center;" >
+				<input type="checkbox" id="dog" name="dog">
+				<label for = "dog">I like dogs</label>
+				<button onclick = "alert('Do you want to continue?')">
+					<img src = "bakery-button.JPG" height = "64" width = "64"/>
+				</button>
+				</div>
+				<label for = "volume">Volume</label>
+				<input type = "range" id = "volume" name = "volume" min = "0" max = "100">
+				<input type = "file" id = "gallery" name = "gallery" multiple>
+			-->
+		</main>
+		
+		<footer>
+
+		</footer>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
