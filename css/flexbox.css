@@ -1,0 +1,98 @@
+.container {
+    display: inline-flex;
+    flex: 1 1 300px;
+    border-radius: 10px;
+    border: 1px solid white;
+    overflow: hidden;
+    flex-flow: row wrap; /*Defines the wrap behaviour of flex box*/
+    justify-content: stretch; /*Aligns flexbox contents along the main axis*/
+}
+
+.icon {
+    padding: 0.8rem;
+    width: 64px;
+}
+
+.searchBox {
+    border: 0;
+    flex: 1;
+}
+
+.searchButton {
+    color: white;
+    background: blue;
+    border: 0;
+    padding: 0.8rem;
+    border-radius: 8px;
+}
+
+.container input:hover {
+    border: 1px solid green;
+}
+
+.bandRow {
+    display: flex;
+    align-items: stretch; /*Controls alignment along cross axis*/
+}
+
+.bandRow .bandContainer {
+    flex: 1;
+    display: flex;
+    justify-content: stretch;
+}
+
+.bandRow .tband {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bandRow div::first-letter {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
+
+.redb {
+    color: whitesmoke;
+    text-align: center;
+    background-color: maroon;
+}
+
+.greenb {
+    color: whitesmoke;
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+.blueb {
+    color: whitesmoke;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.tileContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 33vw);
+    grid-auto-rows: minmax(30vh, 40vh);
+    /*grid-template-rows: 1fr 1fr;*/
+    /*Fractions to determine how much of the space, each rows will occupy*/
+    grid-gap: 0px;
+    justify-items: center;
+}
+
+.tile {
+    padding: 15px;
+    margin: 10px;
+    font-size: 150%;
+}
+
+.tile img:hover {
+    transform: rotate(5deg);
+    transition: 2s;
+}
+
+main h2::selection {
+    color: blue;
+    background-color: skyblue;
+}

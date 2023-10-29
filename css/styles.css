@@ -1,0 +1,30 @@
+.review {
+	color: blue;
+}
+.menu-veg-items {
+	color: green;
+	font-size: 20px;
+}
+.menu-non-veg-items {
+	color: tomato;
+	font-size: 20px;
+}
+.superscript {
+	color: blue;
+}
+.menu-contact {
+	color: blue;
+}
+.topnav {
+	background-color: black;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 16px 15px;
+	font-size: 17px;
+}
